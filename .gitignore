@@ -1,0 +1,6 @@
+# IDE
+**/.DS_Store
+**/.idea
+
+# NODE
+**/node_modules/
