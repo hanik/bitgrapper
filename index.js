@@ -8,14 +8,14 @@ server([
     get('/', ctx => 'Hello world!')
 ]);
 
-let times = 0;
+let times = 1;
 let seq = 0;
 setInterval(() => {
     seq++
-    if(seq === 60) {
-        console.log(`Grepped ${seq} * ${times} datas...`)
-        seq = 0
-        times++
-    }
-    grepper.grap('ALL')
+if(seq === 60) {
+    console.log(`Grepped ${60 * times} datas...`)
+    seq = 0
+    times++
+}
+grepper.grap('ALL')
 }, 1000);

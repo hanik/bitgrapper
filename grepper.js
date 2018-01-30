@@ -12,7 +12,7 @@ const grap = async (currency) => {
     const data = await axios.get(`https://api.bithumb.com/public/ticker/${currency}`)
         .then(response => response.data)
         .catch(function (error) {
-            console.log(error);
+            console.error(error.message);
         });
     const utc = luxon.DateTime.local().toFormat('yyLLdd_HH')
 
