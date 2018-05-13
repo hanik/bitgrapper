@@ -21,4 +21,4 @@ setInterval(() => {
     grepper.grap('ALL')
 }, 1000)
 
-setInterval(compress.run, 1000 * 60 * 60 * 24)
+// setInterval(compress.run, 1000 * 60 * 60 * 24)
